@@ -1,0 +1,7 @@
+/* static/css/style.css */
+.header-bg {
+  background-image: url('/miltontours/static/img/header.jpg');
+  background-size: cover;
+  color: white;
+  padding: 2rem;
+}
