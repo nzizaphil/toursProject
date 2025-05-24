@@ -13,4 +13,13 @@ pip install email-validator
  python3 run.py
 ```
 
-Run  python3 run.py to start the program.
+## How to Run Python in Terminal
+
+Run  ``` bash python3 run.py ``` to start the program.
+
+## Activate environment variable
+
+by running :
+
+``` python3 -m venv venv ```
+``` source venv/bin/activate ```
