@@ -21,7 +21,7 @@
                     <p class="card-text">{{ tour.description }}</p>
                 </div>
                 <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Add to Basket</a>
+                    <a href="{{ url_for('main.order', tour_id = tour.id) }}" class="btn btn-primary">Add to Basket</a>
                 </div>
             </div>
         </div>

@@ -46,16 +46,16 @@
                             href="{{ url_for('main.index', _anchor='cities_anchor') }}">Cities</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Basket</a>
+                        <a class="nav-link text-light" href="{{ url_for('main.order') }}">Basket</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="discounts.html">Offers</a>
+                        <a class="nav-link text-light" href="/discounts.html">Offers</a>
                     </li>
                 </ul>
 
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <span class="navbar-text text-light">1-800-MILTON</span>
+                        <span class="navbar-text text-light"><a href="tel:+123456789">1-800-MILTON</a></span>
                     </li>
                     <li class="nav-item">
                         <form class="d-flex my-2 my-lg-0 ms-5">

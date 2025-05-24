@@ -1,5 +1,6 @@
-#import flask - from the package import class
+#import flask - from package import class
 from flask import Flask, render_template
+from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)
 
@@ -7,6 +8,9 @@ app = Flask(__name__)
 # a web server will run this web application
 def create_app():
     app.debug = True
+    app.secret_key = 'BetterSecretNeeded123'
+
+    bootstrap = Bootstrap5(app)
     
     #importing modules here to avoid circular references, register blueprints of routes
     from . import views
@@ -22,4 +26,3 @@ def not_found(e):
 @app.errorhandler(500)
 def internal_error(e):
   return render_template("500.html")
-
